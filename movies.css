@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    background: transparent;
+    color: whitesmoke;
+}
+
+body {
+    background-color: black;
+}
+
+/* <-------------------header-----------------> */
+.header {
+    width: 100%;
+    background-image: url('./img/5.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px, 8%;
+    position: relative;
+    border-bottom: 5px solid #61a1c04a;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(31, 27, 27, 0.30);
+}
+
+/* <-------------------navbar-------------------------> */
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    z-index: 1;
+}
+
+.logo-img a,
+.quicklink-link {
+    text-decoration: none;
+}
+
+.logo1-img{
+    height: 50px;
+}
+
+.logo2-img{
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.navbar a,
+.free-trial a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+
+.navbar a:hover,
+.free-trial a:hover {
+    color: red;
+    transition: all .4s ease;
+}
+
+.navbar a .active {
+    color: red;
+}
+
+.trending {
+    color: white;
+    padding: 18% 20%;
+    line-height: 1.7;
+    background: transparent;
+    filter: brightness(200%);
+    text-transform: uppercase;
+}
+
+.trending h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.trending h2 {
+    font-size: 50px;
+    color: #ff0000;
+    line-height: 55px;
+}
+
+.trending p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.trending .btn-1 button {
+    margin-top: 8px;
+    background: #f00;
+    border-radius: 8px;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    align-self: center;
+    max-width: 600px;
+    padding: 10px 8px;
+    border: none;
+    width: 125px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.trending .btn-1 i {
+    font-size: 16px;
+    color: black;
+    padding-right: 2px;
+}
+
+.trending .btn-1 button:hover {
+    color: rgba(0, 0, 0, 1);
+    transition: all .5s ease;
+    transform: scale(.99);
+    font-weight: bolder;
+}
+
+/* <-----------------------movies css----------------> */
+
+.movies,
+.series {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.movies h1,
+.series h1 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 40px;
+}
+
+.latest-movies,
+.latest-series {
+    display: flex;
+    justify-content: center;
+}
+
+.movie-poster,
+.series-poster {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 85%;
+}
+
+.movie-poster a,
+.series-poster a {
+    margin: 30px 20px;
+    max-width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.movie-poster a .slogan,
+.series-poster a .slogan {
+    font-size: 13px;
+    color: #1c43e1;
+}
+
+.movie-poster a span,
+.series-poster a span {
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.movie-poster a img:hover,
+.series-poster a img:hover {
+    transition: all .6s ease;
+    transform: scale(0.9);
+}
+
+.title-link-img {
+    border-radius: 12px;
+    margin: 10px 0px;
+    width: 100%;
+    height: 70%;
+}
+
+
+.new-subs {
+    text-align: center;
+    margin: 40px 0px;
+    font-size: 10px;
+}
+
+hr {
+    height: 5px;
+    color: gray;
+    background: gray;
+}
+
+/* <-----------------------footer css----------------> */
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    border-bottom: 1px solid #282424;
+    padding: 20px 0px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+
+.top i {
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 15px;
+    box-shadow: inset 0 4px 8px hsla(0, 100%, 98.8%, 0.37);
+}
+
+.footer-text {
+    font-size: 20px;
+    line-height: 3.5rem;
+}
+
+.browsing-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.browsinglist {
+    line-height: 40px;
+    padding-right: 80px;
+}
+
+.browsinglist a,
+.helpinglist a,
+.aboutus a,
+.browsinglist2 a {
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.browsinglist2,
+.helpinglist,
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.footer-text2 {
+    font-size: 20px;
+    line-height: 3.5rem;
+    position: relative;
+}
+
+.quicklink-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 75%;
+    /* border: 1px solid aqua; */
+    margin: 20px auto;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.quicklink-list li{
+    padding-right: 10px;
+    list-style: none;
+}
+
+.social-list li{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.quicklink-list,
+.social-list {
+    display: flex;
+}
+
+.social-list {
+    font-size: 20px;
+}
+
+.social-list a ion-icon:hover, .top i:hover {
+    color: #ff0000;
+    transition: all .5s ease;
+}
+
+.social-link {
+    box-shadow: inset 0 4px 8px hsla(0, 100%, 98.8%, 0.37);
+    border-radius: 50%;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+/* <-----------------------media query----------------> */
+
+@media (max-width: 900px) {
+
+    .movie-poster,
+    .series-poster,
+    .social-icons {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header,
+    .footer,
+    .sociallll {
+        padding: 20px 10px;
+        flex-wrap: wrap;
+    }
+
+    .logo-img {
+        display: flex;
+        padding-left: 16px;
+    }
+
+    .logo2-img,
+    .free-trial,
+    .top {
+        display: none;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 10px;
+    }
+
+    .trending h3 {
+        margin-top: 160px;
+    }
+
+}
+
