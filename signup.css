@@ -154,7 +154,7 @@ button {
 
 .landing-page {
     display: grid;
-    background-image: url("signin/img/nf.jpg");
+    background-image: url("./img/landing-img/nf.jpg");
     /* background-size: cover; */
     background-position: center;
     filter: brightness(120%);
