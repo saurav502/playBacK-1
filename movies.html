@@ -13,24 +13,35 @@
 </head>
 
 <body>
-    <header id="home">
-        <div class="logo-img">
-            <a href="index.html">
-                <img src="./img/log1.png" alt="" class="logo1-img">
-                <img src="./img/log2.png" alt="" class="logo2-img">
-            </a>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./img/log1.png" alt="" class="logo1-img">
+                    <img src="./img/log2.png" alt="" class="logo2-img">
+                </a>
+    
+            </div>
+            <nav>
+                <ul>
+                    <li class="navbar-item"><a class="navbar-link" href="/about">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/blog">Web Series</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/careers">Movies</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/contact">TV Shows</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="/contact">Anime</a></li>
+            <li><a class="navbar-link" href="/contact">start your free plan</a></li>
+                </ul>
+            
+            </nav>
         </div>
-        <ul class="navbar">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#webseries">Web Series</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#tvshows">TV Shows</a></li>
-            <li><a href="#anime">Anime</a></li>
-
-        </ul>
-        <div class="free-trial">
-            <a href="">Start Your Free Trial</a>
+        <div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
+    
     </header>
 
     <h1 class="find-movies">Find Movies, TV shows and more</h1>
@@ -467,6 +478,14 @@
         </div>
 
     </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
 
 </body>
 
