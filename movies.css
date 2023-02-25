@@ -92,21 +92,16 @@ header {
     cursor: pointer;
 }
 
-
 form {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-
-
 .form-control::placeholder {
-
     color: rgba(255,255,255,0.5);
     opacity: 1;
     font-size: 12px;
-
 }
 
 .form-control.search-input {
