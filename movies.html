@@ -5,20 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayBack</title>
-    <link rel="icon" type="title-link-img" href="./movie_img/log1.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <title>Document</title>
     <link rel="stylesheet" href="movies.css">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <!-- /* <-----------------------header section---------------->
-
-    <header>
+    <header id="home">
         <div class="logo-img">
             <a href="index.html">
                 <img src="./img/log1.png" alt="" class="logo1-img">
@@ -27,124 +21,356 @@
         </div>
         <ul class="navbar">
             <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#webseries">Web Series</a></li>
             <li><a href="#movies">Movies</a></li>
-            <li><a href="#tvshows">TV</a></li>
+            <li><a href="#tvshows">TV Shows</a></li>
         </ul>
         <div class="free-trial">
             <a href="">Start Your Free Trial</a>
         </div>
     </header>
-    <div class="header" id="home">
-        <div class="trending">
-            <h3>Trending</h3>
-            <h2>Stranger Things</h2>
-            <p>2016 | Sci-Fi TV | Suspenseful | Thriller | 4 Seasons</p>
-            <div class="btn-1">
-                <button href="#"><i class="fa fa-play" aria-hidden="true"></i>
-                    Watch Now</button>
-                <button href="#"><i class="fa fa-plus" aria-hidden="true"></i>
-                    Watch Later</button>
-            </div>
-        </div>
+
+    <h1 class="find-movies">Find Movies, TV shows and more</h1>
+    <div class="search-content">
+        <form>
+            <div class="search-icon"><i class="fa fa-search"></i></div> <input type="text" name="keyword"
+                placeholder="Enter keywords..." autocomplete="off" class="form-control search-input">
+            <button class="btn btn-primary btn-primary-submit"><svg class="arrow-right"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                    <path
+                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                </svg></button>
+        </form>
     </div>
-
-
-    <!-------------------- movie section--------------------- -->
-
-
-    <div class="movies" id="movies">
-        <h1>Bollywood Movies</h1>
-        <div class="latest-movies">
-            <div class="movie-poster">
-                <a href=""><img class="title-link-img" src="./img/bmovies/21.jpg" alt=""><span>RRR</span><br><span
-                        class="slogan">Action</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/4.jpg"
-                        alt=""><span>Raangi</span><br><span class="slogan">Dramas</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/5.jpg"
-                        alt=""><span>Kantara</span><br><span class="slogan">Action & Adventure</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/8.jpg"
-                        alt=""><span>DoctorG</span><br><span class="slogan">Dramas</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/10.jpg"
-                        alt=""><span>Dhamaka</span><br><span class="slogan">Action & Adventure</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/11.jpg" alt=""><span>Code Name -
-                        Tiranga</span><br><span class="slogan">Bollywood Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/25.jpg" alt=""><span>Tara vs
-                        Bilal</span><br><span class="slogan">Romantic Comedies</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/13.jpg" alt=""><span>18
-                        Pages</span><br><span class="slogan">Telugu-Language Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/22.jpg" alt=""><span>Raw</span><br><span
-                        class="slogan">Action</span></a>
-                <a href=""><img class="title-link-img" src="./img/bmovies/24.jpg"
-                        alt=""><span>Saaho</span><br><span class="slogan">Telugu-Language Movies</span></a>
-            </div>
+    <section class="movies" id="webseries">
+        <div class="movies-heading">
+            <h1>Web Series</h1>
         </div>
-    </div>
-    <div class="movies">
-        <h1>Hollywood Movies</h1>
-        <div class="latest-movies">
-            <div class="movie-poster">
-                <a href=""><img class="title-link-img" src="./img/hmovies/1.jpg" alt=""><span>Brian
-                        Banks</span><br><span class="slogan">Movies Based on Real Life</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/2.jpg" alt=""><span>Good Will
-                        Hunting</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/3.jpg" alt=""><span>The Blind
-                        Side</span><br><span class="slogan">Sports Dramas</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/4.jpg" alt=""><span>Venom: Let There Be
-                        Carnage</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/5.jpg"
-                        alt=""><span>Uncharted</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/6.jpg" alt=""><span>Bullet
-                        Train</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/7.jpg" alt=""><span>Snake Eyes: G.I. Joe
-                        Origins</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/8.jpg" alt=""><span>The
-                        Invitation</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/7.jpg" alt=""><span>Snake Eyes: G.I. Joe
-                        Origins</span><br><span class="slogan">US Movies</span></a>
-                <a href=""><img class="title-link-img" src="./img/hmovies/8.jpg" alt=""><span>The
-                        Invitation</span><br><span class="slogan">US Movies</span></a>
-            </div>
+        <div class="movie-poster">
+            <a href=""><img class="title-link-img" src="./img/tv shows/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/100.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+
+            <a href=""><img class="title-link-img" src="./img/tv shows/101.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+
+            <a href=""><img class="title-link-img" src="./img/tv shows/106.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/107.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/108.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/109.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+
+            <a href=""><img class="title-link-img" src="./img/tv shows/110.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+
+            <a href=""><img class="title-link-img" src="./img/tv shows/111.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/112.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/113.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
         </div>
-    </div>
-
-
-    <!-- /* <----------------------series section---------------->
-
-
-    <div class="series" id="tvshows">
-        <h1 id="tvshow" class="tvshow">TV Shows</h1>
-        <div class="latest-series">
-            <div class="series-poster">
-                <a href=""><img class="title-link-img" src="./img/tv shows/1.jpg" alt=""><span>New
-                        Amsterdam</span><br><span class="slogan">TV Shows Based on Books</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/2.jpg" alt=""><span>The Good
-                        Doctor</span><br><span class="slogan">Medical TV Shows</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/19.jpg" alt=""><span>Breaking
-                        Bad</span><br><span class="slogan">Crime TV Shows</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/18.jpg" alt=""><span>The Walking
-                        Dead</span><br><span class="slogan">TV Dramas</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/5.jpg"
-                        alt=""><span>Murder</span><br><span class="slogan">Crime TV Shows</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/26.jpg" alt=""><span>Where the Crawdads
-                        Sing</span><br><span class="slogan">Mysteries</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/9.jpg"
-                        alt=""><span>Friends</span><br><span class="slogan">Sitcoms</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/17.jpg" alt=""><span>The Big Bang
-                        Theory</span><br><span class="slogan">Sitcoms</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/9.jpg"
-                        alt=""><span>Friends</span><br><span class="slogan">Sitcoms</span></a>
-                <a href=""><img class="title-link-img" src="./img/tv shows/17.jpg" alt=""><span>The Big Bang
-                        Theory</span><br><span class="slogan">Sitcoms</span></a>
-            </div>
+    </section>
+    <section class="movies" id="movies">
+        <div class="movies-heading">
+            <h1>Movies</h1>
         </div>
-    </div>
-    <p class="new-subs">New subscribers only. Cancel anytime. Additional terms apply.</p>
-    <hr class="divider">
-
-
-    <!-- /* <-----------------------footer section---------------->
-
-
+        <div class="movie-poster">
+            <a href=""><img class="title-link-img" src="./img/bmovies/100.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/101.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/100.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/101.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+        </div>
+    </section>
+    <section class="movies" id="tvshows">
+        <div class="movies-heading">
+            <h1>TV Shows</h1>
+        </div>
+        <div class="movie-poster">
+            <a href=""><img class="title-link-img" src="./img/bmovies/100.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/101.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/100.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/101.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/hmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+        </div>
+    </section>
+    <section class="movies" id="anime">
+        <div class="movies-heading">
+            <h1>Anime</h1>
+        </div>
+        <div class="movie-poster">
+            <a href=""><img class="title-link-img" src="./img/tv shows/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/104.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/104.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/tv shows/104.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/102.jpg" alt="">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/103.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/104.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+            <a href=""><img class="title-link-img" src="./img/bmovies/105.jpg" alt=""><span
+                    class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span></a>
+        </div>
+    </section>
     <section class="footer">
         <div class="footer-list">
             <div class="footer-text">
@@ -166,7 +392,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="footer-text">
                 <h3>HELP</h3>
                 <div class="help-list">
@@ -198,10 +424,10 @@
         </div>
     </section>
     <div class="quicklink-wrapper">
-    
+
         <div class="quicklink">
             <ul class="quicklink-list">
-                <li><a href="#" class="quicklink-link">Faq</a></li>
+                <li><a href="#" class="quicklink-link">FAQ</a></li>
                 <li><a href="#" class="quicklink-link">Help center</a></li>
                 <li><a href="#" class="quicklink-link">Terms of use</a></li>
                 <li><a href="#" class="quicklink-link">Privacy</a></li>
@@ -215,28 +441,28 @@
                             aria-label="logo facebook"></ion-icon>
                     </a>
                 </li>
-    
+
                 <li>
                     <a href="#" class="social-link">
                         <ion-icon name="logo-twitter" role="img" class="fa fa-instagram"
                             aria-label="logo twitter"></ion-icon>
                     </a>
                 </li>
-    
+
                 <li>
                     <a href="#" class="social-link">
                         <ion-icon name="logo-pinterest" role="img" class="fa fa-twitter"
                             aria-label="logo pinterest"></ion-icon>
                     </a>
                 </li>
-    
+
                 <li>
                     <a href="#" class="social-link">
                         <ion-icon name="logo-linkedin" role="img" class="fa fa-youtube-play"
                             aria-label="logo linkedin"></ion-icon>
                     </a>
                 </li>
-    
+
             </ul>
         </div>
 

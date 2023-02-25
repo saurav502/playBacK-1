@@ -1,65 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    font-family: 'Poppins';
     box-sizing: border-box;
-    background: transparent;
-    color: whitesmoke;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
--webkit-tap-highlight-color: transparent;
+    color: white;
+    font-family: 'Poppins';
+    /* background: black; */
+    scroll-behavior: smooth;
 }
+
 
 body {
-    background-color: black;
+    background: black;
 }
 
-/* <-------------------header-----------------> */
-.header {
-    width: 100%;
-    background-image: url('./img/5.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 10px, 8%;
-    position: relative;
-    border-bottom: 5px solid #61a1c04a;
-}
-
-.header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(12, 11, 11, 0.519);
-}
-
-/* <-------------------navbar-------------------------> */
 header {
-    position: absolute;
+    /* position: fixed; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 12%;
+    background: #121212;
+    padding: 10px 12%;
     z-index: 1;
 }
+
 
 .logo-img a,
 .quicklink-link {
     text-decoration: none;
 }
 
-.logo1-img{
-    height: 50px;
+.logo1-img {
+    height: 35px;
 }
 
-.logo2-img{
-    height: 40px;
+.logo2-img {
+    height: 30px;
 }
 
 .navbar {
@@ -73,10 +52,12 @@ header {
 
 .navbar a,
 .free-trial a {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 500;
     text-decoration: none;
     transition: all .4s ease;
+    text-transform: uppercase;
+
 }
 
 .navbar a:hover,
@@ -89,77 +70,90 @@ header {
     color: red;
 }
 
-.trending {
-    color: white;
-    padding: 18% 20%;
-    line-height: 1.7;
-    background: transparent;
-    filter: brightness(200%);
-    text-transform: uppercase;
+.find-movies {
+    font-size: 1.5em;
+    font-weight: 300;
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.trending h3 {
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 400;
+.search-content {
+    position: relative;
+    text-align: center;
 }
 
-.trending h2 {
-    font-size: 50px;
-    color: #ff0000;
-    line-height: 55px;
-}
-
-.trending p {
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.trending .btn-1 button {
-    margin-top: 8px;
-    background: #f00;
-    border-radius: 8px;
-    font-weight: 400;
-    display: flex;
-    text-decoration: none;
-    align-items: center;
+.search-content .search-icon,
+.search-content .search-submit {
+    width: 45px;
+    line-height: 38px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    left: 50px;
     align-self: center;
-    max-width: 600px;
-    padding: 10px 8px;
+    position: relative;
+}
+
+
+.btn.btn-primary.btn-primary-submit {
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
     border: none;
-    width: 125px;
-    font-size: 15px;
+    color: black;
+    background: yellow;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
-.trending .btn-1 i {
-    font-size: 16px;
-    color: black;
-    padding-right: 2px;
+.arrow-right{
+    height: 25px;
 }
 
-.trending .btn-1 button:hover {
-    color: rgba(0, 0, 0, 1);
-    transition: all .5s ease;
-    transform: scale(.99);
-    font-weight: bolder;
+form {
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
-/* <-----------------------movies css----------------> */
+.form-control::placeholder {
+
+    color: #0c1014;
+    opacity: 1;
+    font-size: 15px;
+
+}
+
+.form-control.search-input {
+    padding: 20px 70px;
+    border-radius: 30px;
+    border: none;
+    background: #666;
+}
 
 .movies,
 .series {
     display: flex;
     flex-flow: column;
     align-items: center;
+    border-bottom: 5px solid #343434;
+}
+
+.movies-heading {
+    width: 80%;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .movies h1,
 .series h1 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .latest-movies,
@@ -171,13 +165,13 @@ header {
 .movie-poster,
 .series-poster {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    width: 85%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
 }
 
 .movie-poster a,
 .series-poster a {
-    margin: 30px 20px;
+    margin: 8px 5px;
     max-width: 100%;
     text-decoration: none;
     color: whitesmoke;
@@ -189,40 +183,31 @@ header {
     color: #1c43e1;
 }
 
-.movie-poster a span,
-.series-poster a span {
-    line-height: 1.5rem;
-    font-size: 20px;
-}
-
 .movie-poster a img:hover,
 .series-poster a img:hover {
     transition: all .6s ease;
-    transform: scale(0.9);
+    transform: scale(0.96);
 }
 
 .title-link-img {
-    border-radius: 12px;
+    /* border-radius: 2px; */
     margin: 10px 0px;
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
-
-.new-subs {
-    text-align: center;
-    margin: 40px 0px;
-    font-size: 10px;
+.checked {
+    color: orange;
 }
 
-hr {
+/* hr {
     height: 5px;
     color: gray;
     background: gray;
-}
+} */
 
-/* <-----------------------footer css----------------> */
 
+/* ------------------footer----------------- */
 
 .footer {
     display: flex;
@@ -237,10 +222,10 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
+    width: 80%;
     border-bottom: 1px solid #282424;
     padding: 20px 0px;
-    max-width: 1200px;
+    max-width: 1260px;
     flex-wrap: wrap;
 }
 
@@ -263,7 +248,7 @@ hr {
 }
 
 .browsinglist {
-    line-height: 40px;
+    line-height: 30px;
     padding-right: 80px;
 }
 
@@ -281,7 +266,7 @@ hr {
 .aboutus {
     display: flex;
     flex-direction: column;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .footer-text2 {
@@ -293,20 +278,20 @@ hr {
 .quicklink-wrapper {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    width: 75%;
+    max-width: 1260px;
+    width: 80%;
     /* border: 1px solid aqua; */
     margin: 20px auto;
     flex-wrap: wrap;
     font-size: 15px;
 }
 
-.quicklink-list li{
-    padding-right: 10px;
+.quicklink-list li {
+    padding-right: 20px;
     list-style: none;
 }
 
-.social-list li{
+.social-list li {
     list-style: none;
     padding-left: 10px;
 }
@@ -320,7 +305,8 @@ hr {
     font-size: 20px;
 }
 
-.social-list a ion-icon:hover, .top i:hover {
+.social-list a ion-icon:hover,
+.top i:hover {
     color: #ff0000;
     transition: all .5s ease;
 }
@@ -336,16 +322,13 @@ hr {
     text-decoration: none;
 }
 
-/* <-----------------------media query----------------> */
-
-@media (max-width: 900px) {
+@media (max-width: 950px) {
 
     .movie-poster,
-    .series-poster,
-    .social-icons {
-        display: inline-flex;
-        flex-wrap: wrap;
+    .series-poster {
+        display: grid;
         justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .social-icons {
@@ -376,9 +359,45 @@ hr {
         margin: 0px 10px;
     }
 
+    .navbar li{
+        padding: 0px 0px;
+    }
+
     .trending h3 {
         margin-top: 160px;
     }
 
 }
 
+@media (max-width: 850px) {
+
+    .movie-poster,
+    .series-poster {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .movie-poster,
+    .series-poster {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .btn-primary-submit{
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .movie-poster,
+    .series-poster {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+}
