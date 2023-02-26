@@ -401,11 +401,21 @@
     .inside-block2{
         flex-direction: column-reverse;
     }
+
+    .top i {
+        display: none;
+     }
 }
 
 /* <------------- Mobile Query Mobile sm-----------> */
 
-@media (max-width: 425px) {
+/* @media  (max-width: 426px) { */
+
+@media  (width<=426px) {
+
+    /* @media (427px <= width <= 700px) { */
+
+
     .logo2-img {
         display: none;
     }
@@ -444,5 +454,12 @@
 
     .top i {
        display: none;
+    }
+
+    .inside-block2{
+        gap: 35px;
+    }
+    .inside-block3{
+        gap: 27px;
     }
 }
