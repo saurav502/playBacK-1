@@ -363,9 +363,9 @@
     font-size: 20px;
 }
 
-.social-list a ion-icon:hover, .top i:hover {
+.social-list a i:hover, .top i:hover {
     color: #ff0000;
-    transition: all .5s ease;
+    transition: .1s;
 }
 
 .social-link {

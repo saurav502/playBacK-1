@@ -8,6 +8,7 @@
     <title>PlayBack</title>
     <link rel="stylesheet" href="movies.css">
     <link rel="icon" type="title-link-img" href="./img/log1.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -20,18 +21,18 @@
                     <img src="./img/log1.png" alt="" class="logo1-img">
                     <img src="./img/log2.png" alt="" class="logo2-img">
                 </a>
-    
+
             </div>
             <nav>
                 <ul>
                     <li class="navbar-item"><a class="navbar-link" href="./index.html">Home</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#webseries">Web Series</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#movies">Movies</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#tvshows">TV Shows</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#anime">Anime</a></li>
-            <li><a class="navbar-link" href="/contact">Start your free plan</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#webseries">Web Series</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#movies">Movies</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#tvshows">TV Shows</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#anime">Anime</a></li>
+                    <li><a class="navbar-link" href="/contact">Start your free plan</a></li>
                 </ul>
-            
+
             </nav>
         </div>
         <div class="header-right">
@@ -41,16 +42,16 @@
                 <div></div>
             </div>
         </div>
-    
+
     </header>
 
     <h1 class="find-movies">Find Movies, TV shows and more</h1>
     <div class="search-content">
         <form>
-             <input type="text" name="keyword"
-                placeholder="Enter keywords..." autocomplete="off" class="form-control search-input">
+            <input type="text" name="keyword" placeholder="Enter keywords..." autocomplete="off"
+                class="form-control search-input">
             <button class="btn btn-primary btn-primary-submit">
-                <div class="search-icon"><i class="fa fa-search"></i></div>            
+                <div class="search-icon"><i class="fa fa-search"></i></div>
             </button>
         </form>
     </div>
@@ -448,29 +449,25 @@
             <ul class="social-list">
                 <li>
                     <a href="#" class="social-link">
-                        <ion-icon name="logo-facebook" role="img" class="fa fa-facebook"
-                            aria-label="logo facebook"></ion-icon>
+                        <i class='bx bxl-facebook-circle'></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="#" class="social-link">
-                        <ion-icon name="logo-twitter" role="img" class="fa fa-instagram"
-                            aria-label="logo twitter"></ion-icon>
+                        <i class='bx bxl-instagram'></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="#" class="social-link">
-                        <ion-icon name="logo-pinterest" role="img" class="fa fa-twitter"
-                            aria-label="logo pinterest"></ion-icon>
+                        <i class='bx bxl-twitter'></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="#" class="social-link">
-                        <ion-icon name="logo-linkedin" role="img" class="fa fa-youtube-play"
-                            aria-label="logo linkedin"></ion-icon>
+                        <i class='bx bxl-youtube'></i>
                     </a>
                 </li>
 
@@ -482,7 +479,7 @@
     <script>
         hamburger = document.querySelector(".hamburger");
         nav = document.querySelector("nav");
-        hamburger.onclick = function() {
+        hamburger.onclick = function () {
             nav.classList.toggle("active");
         }
     </script>
