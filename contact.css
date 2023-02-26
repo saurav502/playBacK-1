@@ -37,7 +37,7 @@
     background-attachment: fixed;
     background-size: cover;
     filter: contrast(1.2);
-  
+
 
 
 
@@ -121,7 +121,7 @@
     height: 70vh;
     padding: 30px 55px 40px;
     width: 370px;
-    
+
 }
 
 #name,
@@ -169,9 +169,8 @@ button {
 
 @media (max-width: 700px) {
 
-    .logo-img {
-        display: flex;
-        padding-left: 16px;
+    .logo2-img {
+        display: none;
     }
 
     .form-div {
