@@ -427,10 +427,10 @@ input[type="text"]{
     font-size: 20px;
 }
 
-.social-list a ion-icon:hover,
+.social-list a i:hover,
 .top i:hover {
     color: #ff0000;
-    transition: all .5s ease;
+    transition: .1s;
 }
 
 .social-link {
