@@ -35,7 +35,7 @@ To get started with PlayBack, simply clone the repository and start running it. 
 1. Open your command prompt or terminal and navigate to the folder where you want to store the project.
 2. Clone the PlayBack repository by typing the following command:
 
-git clone https://github.com/legions/PlayBack.git
+git clone https://github.com/AmanRawat130ss/playBack.git
 
 
 3. Open the index.html file in your preferred text editor and start making changes.
