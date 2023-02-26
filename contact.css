@@ -87,8 +87,6 @@
     background-color: transparent;
     align-content: center;
     cursor: pointer;
-
-
 }
 
 .logo1-img {
@@ -100,9 +98,6 @@
     background: transparent;
     height: 40px;
 }
-
-
-
 
 .contact-us {
     box-sizing: border-box;
@@ -139,16 +134,7 @@
     padding: 15px 0px;
 }
 
-/* 
- {
-    height: 40px;
-    width: 99%;
-    border-radius: 5px;
-} */
-
 .btn {
-    padding: 0px 0px;
-    /* background-color: transparent; */
     background-color: rgb(130, 4, 4);
     border-radius: 5px;
 }
@@ -164,60 +150,11 @@
 
 }
 
-.help a {
-    text-align: right;
-}
-
 #send-message:hover {
     background-color: rgba(251, 3, 3, 0.997);
     transition: all .4s ease;
 }
 
-.need {
-    display: inline-block;
-    /* margin-left: 118px; */
-    background-color: transparent;
-
-}
-
-.need p,
-a {
-    background-color: transparent;
-    line-height: 1.5rem;
-    color: gray;
-
-}
-
-.signup h2 {
-    background-color: transparent;
-    letter-spacing: 2px;
-    font-size: 40px;
-}
-
-
-.signup {
-    background-color: transparent;
-    padding: 10px 0px;
-}
-
-.checkkk {
-    display: flex;
-    justify-content: space-between;
-}
-
-.checkkbox1 {
-    background: transparent;
-    display: flex;
-}
-
-.checkkbox {
-    background-color: transparent;
-    flex-grow: 1;
-}
-
-
-
-.signup .checkkk,
 label,
 input,
 button {
