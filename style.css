@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -10,12 +8,9 @@
     background-color: black;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
--webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
 }
-
-
-
 
 /* <-------- Landing Page --------------> */
 
@@ -56,22 +51,23 @@
     justify-content: space-between;
     max-width: 1400px;
     width: 95%;
-  
+
 }
 
 /* <------- Nav Bar Components --->   */
 
 
-.logo-img{
-    background-color: transparent;  
+.logo-img {
+    background-color: transparent;
 }
 
-.logo1-img{
+.logo1-img {
     background: transparent;
     height: 50px;
 }
-.logo2-img{
-    background:transparent;
+
+.logo2-img {
+    background: transparent;
     height: 40px;
 }
 
@@ -88,8 +84,6 @@
 
 }
 
-
-
 /* 
 .lang-after, .lang-before {
     color: White;
@@ -103,8 +97,6 @@
     display: none;
 } */
 
-
-
 .sign-in {
     background: #ff000065;
     border-radius: 4px;
@@ -113,19 +105,18 @@
     font-size: 15px;
     text-decoration: none;
     text-align: center;
-    padding: 5px 16px;  
-  }
+    padding: 5px 16px;
+}
 
-.sign-in:hover{
+.sign-in:hover {
     background-color: rgba(255, 0, 0, 0.647);
-    color:rgb(255, 248, 248)
+    color: rgb(255, 248, 248)
 }
 
 
-  .contact-us {
+.contact-us {
     background: transparent;
-    /* border: 1px solid white; */
-    border-radius: 3px ;
+    border-radius: 3px;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -133,12 +124,12 @@
     text-decoration: none;
     text-align: center;
     padding: 5px 16px;
-    
-  }
 
-  .contact-us:hover{
+}
+
+.contact-us:hover {
     color: red;
-  }
+}
 
 
 
@@ -153,14 +144,12 @@
     background-color: transparent;
     justify-content: center;
     justify-items: center;
-    /* margin: 225px auto; */
     margin: 13% auto;
     gap: 10px;
 }
 
 .display-block>h2 {
     font-size: 3rem;
-    /* font-size: 30px; */
     background-color: transparent;
 }
 
@@ -213,56 +202,43 @@
 /* <------------ Block's ------------------> */
 
 
-.blocks{
+.blocks {
     display: block;
     border-bottom: 3.8px solid #504c4c;
-
-
-
 }
 
-.inside-block{
+.inside-block {
     display: flex;
     margin: 44px auto;
     width: 85%;
     gap: 7px;
     align-items: center;
     justify-content: space-around;
-    
     max-width: 1440px;
-
-    
 }
 
-.content-block{
-    
+.content-block {
     flex-basis: 55%;
     font-size: 20px;
     display: block;
 
 }
 
-.video-block{
-    
+.video-block {
     flex-basis: 45%;
-
 }
 
-.video{
+.video {
     width: 100%;
-
 }
 
-.img{
-
-
+.img {
     width: 100%;
-
 }
-.img-block{
+
+.img-block {
     flex-basis: 45%;
     text-align: center;
-
 }
 
 
@@ -314,7 +290,8 @@
 .browsinglist a,
 .helpinglist a,
 .aboutus a,
-.browsinglist2 a, .quicklink-list a {
+.browsinglist2 a,
+.quicklink-list a {
     text-decoration: none;
     font-size: 15px;
     display: block;
@@ -344,12 +321,12 @@
     font-size: 15px;
 }
 
-.quicklink-list li{
+.quicklink-list li {
     padding-right: 10px;
     list-style: none;
 }
 
-.social-list li{
+.social-list li {
     list-style: none;
     padding-left: 10px;
 }
@@ -363,7 +340,8 @@
     font-size: 20px;
 }
 
-.social-list a i:hover, .top i:hover {
+.social-list a i:hover,
+.top i:hover {
     color: #ff0000;
     transition: .1s;
 }
@@ -391,27 +369,27 @@
         flex-direction: column;
         text-align: center;
     }
-    .content-block h1{
+
+    .content-block h1 {
         font-size: 7vw;
     }
-    
-    .content-block p{
+
+    .content-block p {
         font-size: 4vw;
     }
-    .inside-block2{
+
+    .inside-block2 {
         flex-direction: column-reverse;
     }
 
     .top i {
         display: none;
-     }
+    }
 }
 
 /* <------------- Mobile Query Mobile sm-----------> */
 
-/* @media  (max-width: 426px) { */
-
-@media  (width<=426px) {
+@media (width<=426px) {
 
     /* @media (427px <= width <= 700px) { */
 
@@ -453,13 +431,14 @@
     }
 
     .top i {
-       display: none;
+        display: none;
     }
 
-    .inside-block2{
+    .inside-block2 {
         gap: 35px;
     }
-    .inside-block3{
+
+    .inside-block3 {
         gap: 27px;
     }
 }

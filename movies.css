@@ -73,38 +73,6 @@ header .header-right .hamburger div {
     background: #fff;
 }
 
-
-@media only screen and (max-width: 945px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: #1b1b1b;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: 1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
-}
-
-
-
-
 .logo-img a,
 .quicklink-link {
     text-decoration: none;
@@ -135,7 +103,6 @@ header .header-right .hamburger div {
     text-decoration: none;
     transition: all .4s ease;
     text-transform: uppercase;
-
 }
 
 .navbar a:hover,
@@ -161,19 +128,6 @@ header .header-right .hamburger div {
     position: relative;
     text-align: center;
 }
-
-/* .search-content .search-icon,
-.search-content .search-submit {
-    width: 45px;
-    line-height: 38px;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    left: 50px;
-    align-self: center;
-    position: relative;
-} */
-
 
 .btn.btn-primary.btn-primary-submit {
     width: 60px;
@@ -216,46 +170,12 @@ form {
 
  .search-icon {
     width: 45px;
-    /* line-height: 38px; */
     font-size: 25px;
     text-align: center;
-    /* left: 50px; */
     align-self: center;
-    /* position: relative; */
 }
 
-/* //////// */
-/* 
-
-.form-control.search-input::-webkit-input-placeholder {
-    color: rgba(255,255,255,0.5);
-}
-.form-control.search-input:-moz-placeholder {
-    color: rgba(255,255,255,0.5);
-    opacity: 1;
-}
-.form-control.search-input::-moz-placeholder {
-    color: rgba(255,255,255,0.5);
-    opacity: 1;
-}
-.form-control.search-input:-ms-input-placeholder {
-    color: rgba(255,255,255,0.5);
-}
-input[type="text"]{
-    display:block;
-    width:300px;
-    padding:5px;
-    margin-bottom:5px;
-    font-size:1.5em;
-} */
-
-
-
-
-
-
-
-
+/* ---------------------movie section css---------------- */
 
 .movies,
 .series {
@@ -294,7 +214,6 @@ input[type="text"]{
 .movie-poster a,
 .series-poster a {
     margin: 8px 5px;
-    max-width: 100%;
     text-decoration: none;
     color: whitesmoke;
 }
@@ -321,13 +240,6 @@ input[type="text"]{
 .checked {
     color: orange;
 }
-
-/* hr {
-    height: 5px;
-    color: gray;
-    background: gray;
-} */
-
 
 /* ------------------footer----------------- */
 
@@ -402,7 +314,6 @@ input[type="text"]{
     justify-content: space-between;
     max-width: 1260px;
     width: 80%;
-    /* border: 1px solid aqua; */
     margin: 20px auto;
     flex-wrap: wrap;
     font-size: 15px;
@@ -444,6 +355,35 @@ input[type="text"]{
     text-decoration: none;
 }
 
+
+@media only screen and (max-width: 945px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #1b1b1b;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: 1;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+
 @media (max-width: 950px) {
 
     .movie-poster,
@@ -474,19 +414,6 @@ input[type="text"]{
     .free-trial,
     .top {
         display: none;
-    }
-
-    .navbar a {
-        padding: 5px 0;
-        margin: 0px 10px;
-    }
-
-    .navbar li{
-        padding: 0px 0px;
-    }
-
-    .trending h3 {
-        margin-top: 160px;
     }
 
 }
