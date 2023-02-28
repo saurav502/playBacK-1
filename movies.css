@@ -367,7 +367,7 @@ form {
         margin: 0;
         position: absolute;
         top: -100%;
-        left: 0;
+        right: 0;
         width: 100%;
         height: fit-content;
         background-color: #1b1b1b;
@@ -380,7 +380,9 @@ form {
         top: 70px;
     }
     header .header-left nav ul {
-        display: block;
+        display: inline-block;
+        position: relative;
+        left: 50px;
     }
 }
 

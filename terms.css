@@ -1,10 +1,8 @@
 *{
-   text-decoration: none;
-   background-color: white;
-   color: black;
+  background-color: #100F0F;
+  color: #E6DDC4;
+  text-decoration: none;
 }
-
-
 
 /* <--------------- nav-bar ---------->  */
 
@@ -21,8 +19,9 @@
   
 }
 
-/* <------- Nav Bar Components --->   */
 
+
+/* <------- Nav Bar Components --->   */
 
 
 /* <-- Right Side Bar --> */
@@ -43,7 +42,7 @@
     border-radius: 4px;
     color: white;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 16px;
     text-decoration: none;
     text-align: center;
     padding: 5px 16px;  
@@ -59,7 +58,7 @@
     background: rgba(255, 255, 255, 0.074);
     border: 1px solid rgb(218, 217, 217);
     border-radius: 3px ;
-    color: rgb(9, 9, 9);
+    color: rgb(229, 225, 225);
     cursor: pointer;
     font-size: 16px;
     font-weight: 401;

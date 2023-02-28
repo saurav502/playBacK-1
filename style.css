@@ -54,7 +54,7 @@
 
 }
 
-/* <------- Nav Bar Components --->   */
+    /* <- Nav Bar Components ->   */
 
 
 .logo-img {
@@ -97,7 +97,7 @@
     display: none;
 } */
 
-.sign-in {
+.login {
     background: #ff000065;
     border-radius: 4px;
     color: white;
@@ -106,9 +106,11 @@
     text-decoration: none;
     text-align: center;
     padding: 5px 16px;
+    display: inline-block;
+    
 }
 
-.sign-in:hover {
+.login:hover {
     background-color: rgba(255, 0, 0, 0.647);
     color: rgb(255, 248, 248)
 }
@@ -370,21 +372,7 @@
         text-align: center;
     }
 
-    .content-block h1 {
-        font-size: 7vw;
-    }
-
-    .content-block p {
-        font-size: 4vw;
-    }
-
-    .inside-block2 {
-        flex-direction: column-reverse;
-    }
-
-    .top i {
-        display: none;
-    }
+  
 }
 
 /* <------------- Mobile Query Mobile sm-----------> */
@@ -440,5 +428,21 @@
 
     .inside-block3 {
         gap: 27px;
+    }
+
+      .content-block h1 {
+        font-size: 7vw;
+    }
+
+    .content-block p {
+        font-size: 4vw;
+    }
+
+    .inside-block2 {
+        flex-direction: column-reverse;
+    }
+
+    .top i {
+        display: none;
     }
 }
