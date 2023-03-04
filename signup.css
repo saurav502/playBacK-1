@@ -93,7 +93,7 @@
 
 /*  */
 
-.contact-us {
+.sign-up {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -109,7 +109,7 @@
     border-radius: 15px;
     flex-direction: column;
     height: 70vh;
-    padding: 30px 55px 40px;
+    padding: 30px 40px;
     width: 370px;
 
 }
@@ -117,7 +117,7 @@
 #name,
 #email,
 #phone,
-#message {
+#message, #password {
     width: 100%;
     border-radius: 5px;
     color: white;
@@ -132,7 +132,7 @@
     border-radius: 5px;
 }
 
-#send-message {
+#signup {
     width: 100%;
     color: white;
     border-radius: 5px;
@@ -143,10 +143,12 @@
 
 }
 
-#send-message:hover {
+#signup:hover {
     background-color: rgba(251, 3, 3, 0.997);
     transition: all .4s ease;
 }
+
+
 
 label,
 input,
